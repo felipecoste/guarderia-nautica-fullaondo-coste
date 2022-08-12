@@ -1,0 +1,85 @@
+@media (max-width: 825px) {
+    main{
+        width: 100%;
+    }
+
+    .footerMain{
+        margin: 20px 0px 0px 0px;
+    }
+
+
+ /* --- Index --- */
+
+    .contenedorNuestrosServicios{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+ /* --- Contacto --- */
+
+    .contenedorBody{
+        grid-gap: 0px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:"header"
+                            "gridMain"
+                            "footer";
+    }
+
+    .contenedorFormContacto {
+        border-radius: 0px;
+        margin: 0px;
+        grid-gap: 10px 0px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:"headFormContacto"
+                            "formularioContacto"
+                            "iframeMapa"
+                            "infoContacto";
+    }
+
+    .contenedorFormContactoHead{
+        border-radius: 0px;
+    }
+
+    .infoContacto p:first-of-type{
+        margin-top: 10px;
+    }
+
+
+
+ /* --- Stand-Up Paddle HTML --- */
+
+    .contenedorSup{
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:"imagenSup"
+                            "infoSup";
+    }
+
+    .imagenSup {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 0px 0px 10px;
+        grid-area: imagenSup;
+    }
+
+
+
+ /* --- Sobre nosotros --- */
+    .contenedor {
+        width: 95%;
+    
+        h1 {
+            font-size: 50px;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+    }
+
+}

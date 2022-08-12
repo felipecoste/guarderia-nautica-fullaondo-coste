@@ -1,0 +1,14 @@
+.footerMain {
+    margin-top: auto;
+    padding: 30px 20px 10px 20px;
+    color: $color-w;
+    background: $color-4;
+    background: linear-gradient(0deg, $color-2 10%, $color-1 50%, $color-4 100%);
+    grid-area: footer;
+}
+
+.textoFooter {
+    padding-top: 20px;
+    padding: 5px;
+    text-align: right;
+}

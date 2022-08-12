@@ -1,0 +1,93 @@
+.contenedorFormContacto { 
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgb(248, 248, 248);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:"headFormContacto headFormContacto"
+                        "iframeMapa formularioContacto"
+                        "infoContacto infoContacto";
+}
+
+
+.contenedorFormContactoHead {
+    border-radius: 10px 10px 0px 0px;
+    background-color: $color-1;
+    color: $color-w;
+    grid-area: headFormContacto;
+
+    h2 {
+        text-align: center;
+        padding: 20px 0 20px 0;
+        font-size: 1.4em;
+    }
+}
+
+
+.formularioContacto{
+    grid-area: formularioContacto;
+}
+
+.contenedorFormContacto {
+
+    input {
+    margin-bottom: 10px;
+    }
+
+    input:first-of-type {
+        margin-top: 35px;
+    }
+
+    textarea {
+        height: 100px;
+        margin-bottom: 10px;
+        resize: none; 
+    }
+
+    input, textarea {
+        font-size: 1em;
+        padding: 15px 10px 10px;
+        border: 1px solid #cecece;
+        background: #ebebeb;
+        width: 80%;
+    }
+
+    button {
+        margin: 15px 0px 25px 0px;
+        background-color: $color-1;
+        padding: 15px 55px;
+        border-radius: 5px;
+        border: 1px solid #2ABCA7;
+        display: inline-block;
+        color: $color-w;
+        cursor: pointer;
+    
+        button:hover {
+            background: $color-2;
+        
+        }
+    }
+}
+
+
+
+.iframeUbicacionMapa{
+    grid-area: iframeMapa;
+    width: 90%;
+    height: 350px;
+    margin: auto;
+}
+
+
+.infoContacto{
+    grid-area: infoContacto;
+    margin: 0px 0px 20px 0px;
+
+    p{
+        padding: 0px 0px 10px 0px;
+    }
+}

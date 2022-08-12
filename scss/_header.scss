@@ -1,0 +1,12 @@
+.headerMain{
+    background: $color-4;
+    background: linear-gradient(0deg, $color-4 10%, $color-1 50%, $color-2 100%);
+    padding: 20px 20px 35px 20px;
+    grid-area: header;
+}
+
+.logoHeader {
+    border-radius: 50%;
+    border: 1px solid $color-b;
+    height: 120px;
+}

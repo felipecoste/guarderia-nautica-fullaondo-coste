@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: $color-4;
+    width: 100%;
+    min-height: 100vh;
+}
+.pBold{
+    font-weight: bold;
+}
+
+.contenedorBody{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:"header header header header header header"
+                        "gridMain gridMain gridMain gridMain gridMain gridMain "
+                        "footer footer footer footer footer footer";
+}
+
+
