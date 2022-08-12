@@ -21,6 +21,7 @@
 }
 
 
+
 .nuestrosServicios{
     max-width: 600px;
     margin: 50px auto 10px auto;
@@ -34,10 +35,6 @@
     margin: 0px 0px 50px 0px;
     text-align: center;
 
-    .iconosServicios{
-        width: 120px;
-        height: 150px;
-    }
 }
 
 
@@ -51,19 +48,16 @@
 }
 
 
-.nuestrosServiciosButton{
-    display: inline-block;
-    background-color: $color-2;
-    padding: 15px;
-    border-radius: 15px;
-    margin: 10px;
-    margin-top: auto;
-    color: $color-w;
-    text-decoration: none;
-    list-style: none;
 
-    .nuestrosServiciosButton:hover{
-        background-color: $color-2;
-    }
+/* Mixins */
+@mixin size($alto,$ancho){
+    height: $alto;
+    width: $ancho;
 }
+
+.iconosServicios{
+    @include size(150px,120px)
+}
+/* Fin Mixins */
+
 

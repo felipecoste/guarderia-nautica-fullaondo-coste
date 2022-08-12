@@ -1,0 +1,25 @@
+
+.boton{
+    display: inline-block;
+    background-color: $color-1;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px;
+    color: $color-w;
+    text-decoration: none;
+    list-style: none;
+    border: 0px solid;
+
+}
+.boton:hover{
+    background-color: $color-2;
+}
+
+
+/* Extend */
+.nuestrosServiciosButton {
+    @extend .boton;
+    margin-top: auto;
+    width: 50%;
+    border: 2px solid $color-2;
+}

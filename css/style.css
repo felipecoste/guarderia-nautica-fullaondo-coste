@@ -1,4 +1,24 @@
 /* Paleta #54BAB9 #18978F #E9DAC1 #F7ECDE */
+.boton, .nuestrosServiciosButton {
+  display: inline-block;
+  background-color: #54BAB9;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  border: 0px solid; }
+
+.boton:hover, .nuestrosServiciosButton:hover {
+  background-color: #18978F; }
+
+/* Extend */
+.nuestrosServiciosButton {
+  margin-top: auto;
+  width: 50%;
+  border: 2px solid #18978F; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -70,9 +90,6 @@ main {
   justify-content: space-evenly;
   margin: 0px 0px 50px 0px;
   text-align: center; }
-  .contenedorNuestrosServicios .iconosServicios {
-    width: 120px;
-    height: 150px; }
 
 .bloquesNuestrosServicios {
   max-width: 300px; }
@@ -80,19 +97,12 @@ main {
     font-size: 1.10em;
     font-weight: bold; }
 
-.nuestrosServiciosButton {
-  display: inline-block;
-  background-color: #18978F;
-  padding: 15px;
-  border-radius: 15px;
-  margin: 10px;
-  margin-top: auto;
-  color: #fff;
-  text-decoration: none;
-  list-style: none; }
-  .nuestrosServiciosButton .nuestrosServiciosButton:hover {
-    background-color: #18978F; }
+/* Mixins */
+.iconosServicios {
+  height: 150px;
+  width: 120px; }
 
+/* Fin Mixins */
 .contenedorSup {
   max-width: 1000px;
   margin: 50px auto;
@@ -220,6 +230,17 @@ main {
   padding: 5px;
   text-align: right; }
 
+/* Mapa */
+.red-twitter {
+  color: #55acee; }
+
+.red-facebook {
+  color: #3a5795; }
+
+.red-instagram {
+  color: #ee308f; }
+
+/* Fin Mapa */
 @media (max-width: 825px) {
   main {
     width: 100%; }
